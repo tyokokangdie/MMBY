@@ -1,0 +1,112 @@
+/*=======公用的css=========*/
+body {
+    font-family: "Microsoft YaHei", "sans-serif";
+    color: #333;
+    font-size: 14px;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/*自定义字体  申明自定义字体的名字 引入字体文件 指定字体文件的格式*/
+@font-face {
+    font-family: "wjs";
+    src: url(../fonts/MiFie-Web-Font.eot) format("embedded-opentype"),
+    url(../fonts/MiFie-Web-Font.svg) format("svg"),
+    url(../fonts/MiFie-Web-Font.ttf) format("truetype"),
+    url(../fonts/MiFie-Web-Font.woff) format("woff");
+}
+
+.wjs_icon {
+    font-family: wjs;
+}
+
+/*通过伪类来定义一个字体图标*/
+/*字体图标设计出来的时候一般都会有文档参考*/
+.wjs_icon_phone::before {
+    content: "\e908";
+}
+
+.wjs_icon_tel::before {
+    content: "\e909";
+}
+
+.m_r10 {
+    margin-right: 10px;
+}
+
+.m_t10 {
+    margin-top: 10px;
+}
+
+.m_l10 {
+    margin-left: 10px;
+}
+
+.m_b10 {
+    margin-bottom: 10px;
+}
+
+/*=======页面的css=========*/
+/*顶部通栏*/
+.wjs_header {
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    font-size: 12px;
+    position: relative;
+    z-index: 1001;
+}
+
+.wjs_header .wjs_app {
+    color: #666;
+    position: relative;
+    display: block;
+}
+
+.wjs_header a {
+    color: #666;
+}
+
+.wjs_header .wjs_app img {
+    display: none;
+}
+
+.wjs_header .wjs_app:hover img {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -60px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.wjs_header > .container > .row > div {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.wjs_header > .container > .row > div + div {
+    border-left: 1px solid #ccc;
+}
+
+/*.wjs_header > .container > .row > div{
+    height: 40px;
+    border-left: 1px solid #ccc;
+}
+.wjs_header > .container > .row > div:first-child{
+    border-left:  none;
+}*/
+
+.wjs_header .btn-register {
+    background: #E92322;
+    color: #fff;
+    padding: 3px 15px;
+}

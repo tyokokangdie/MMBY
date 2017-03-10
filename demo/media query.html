@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,html{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            background: red;
+            height: 1000px;
+        }
+        /*响应式布局*/
+        /*超小屏幕设备（移动端设备）768px以下的设备*/
+        @media screen and (max-width: 768px) {
+            .container{
+                width: 100%;
+                background-color: deeppink;
+            }
+        }
+        /*小屏幕设备 大于768px 小于992px的设备*/
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .container{
+                width: 750px;
+                background-color: deepskyblue;
+            }
+        }
+        /*中等屏幕设备 大于992px 小于1200px的设备*/
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            .container{
+                width: 970px;
+                background-color: yellowgreen;
+            }
+        }
+        /*超大屏设备 大于1200px的设备*/
+        @media screen and (min-width: 1200px) {
+            .container{
+                width: 1170px;
+                background-color: hotpink;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+</div>
+</body>
+</html>
